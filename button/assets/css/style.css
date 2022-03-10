@@ -1,0 +1,66 @@
+/* RESET css */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    font-family: "Helvetica Neue";
+    background-color: #f4f4f5;
+}
+
+body > div {
+    margin: auto;
+}
+
+/* Block */
+.btn {
+    padding: 12px 48px;
+    min-width: 120px;
+    display: inline-block;
+    text-decoration: none;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    border-radius:50px;
+    cursor: pointer;
+    transition: opacity .2s ease;
+}
+
+.btn:hover {
+    opacity: .8;
+}
+
+.btn + .btn {
+    margin-left: 48px;
+    margin-top: 48px;
+}
+
+.btn--size-s {
+    padding: 8px 32px;
+}
+
+.btn--size-l {
+    padding: 16px 56px;
+}
+
+.btn--success {
+    background-color: #71be34;
+}
+
+.btn--warn {
+    background-color: #ffb702;
+}
+
+.btn--danger {
+    background-color: #ff623d;
+}
+
+.btn--disabled {
+    opacity: .5;
+    pointer-events: none;
+}
